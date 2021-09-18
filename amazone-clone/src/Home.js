@@ -27,12 +27,32 @@ const Home = () => {
           />
         </div>
         <div className="home__row">
-          <Product />
-          <Product />
-          <Product />
+          <Product
+            title="Microsoft Xbox One S 1TB Console, White"
+            price={388.98}
+            image="https://i5.walmartimages.com/asr/a3a343b8-50cd-4d19-9e61-aba51ae7fc8b.bf7d25dcd3a4736af7e5f245d37f6a56.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
+            rating={5}
+          />
+          <Product
+            title="Amazon Essentials Men's Crewneck Cable Cotton Sweater"
+            price={9}
+            image="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSbOp35sPA2Xwc8FO93-Az-5I_VATjLDzl3cTreiT-zoSC6rbv8Qqj3s6wG_2zAsNf9aRDSE-bJ5Q&usqp=CAc"
+            rating={3}
+          />
+          <Product
+            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
+            price={98.99}
+            image="http://mobileimages.lowes.com/product/converted/841667/841667166834.jpg?size=pdhi"
+            rating={5}
+          />
         </div>
         <div className="home__row">
-          <Product />
+          <Product
+            title="Alienware 34 Curved Gaming Monitor - AW3420DW"
+            price={949.99}
+            image="https://i.dell.com/sites/csimages/SNP_Imagery/all/3420dw.png"
+            rating={3}
+          />
         </div>
       </div>
     </div>
