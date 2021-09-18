@@ -9,6 +9,7 @@ const Header = () => {
       <img
         src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
         className="header__logo"
+        alt=""
       />
 
       <div className="header__search">
