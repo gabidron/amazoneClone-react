@@ -1,17 +1,35 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { auth } from "./Firebase.js";
 import "./Login.css";
 
 const Login = () => {
+  const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const signIn = (e) => {
     e.preventDefault();
+
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        history.push("/");
+      })
+      .catch((error) => alert(error.message));
   };
 
   const register = (e) => {
     e.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        console.log(auth);
+        if (auth) {
+          history.push("/");
+        }
+      })
+      .catch((error) => alert(error.message));
   };
 
   return (
@@ -53,7 +71,7 @@ const Login = () => {
           Use & Sale. Please see out Privacy Notice, our Cookies Notice and our
           Internet-Based Ads
         </p>
-        <button className="login__registerButton" onClick={register()}>
+        <button className="login__registerButton" onClick={register}>
           Create your Amazon Account
         </button>
       </div>
