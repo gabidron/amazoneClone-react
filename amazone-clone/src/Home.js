@@ -14,12 +14,14 @@ const Home = () => {
 
         <div className="home__row">
           <Product
+            id={1}
             title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
             price={19.99}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
             rating={4}
           />
           <Product
+            id={2}
             title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 liter Glass Bowl"
             price={239}
             image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
@@ -28,18 +30,21 @@ const Home = () => {
         </div>
         <div className="home__row">
           <Product
+            id={3}
             title="Microsoft Xbox One S 1TB Console, White"
             price={388.98}
             image="https://i5.walmartimages.com/asr/a3a343b8-50cd-4d19-9e61-aba51ae7fc8b.bf7d25dcd3a4736af7e5f245d37f6a56.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
             rating={5}
           />
           <Product
+            id={4}
             title="Amazon Essentials Men's Crewneck Cable Cotton Sweater"
             price={9}
             image="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSbOp35sPA2Xwc8FO93-Az-5I_VATjLDzl3cTreiT-zoSC6rbv8Qqj3s6wG_2zAsNf9aRDSE-bJ5Q&usqp=CAc"
             rating={3}
           />
           <Product
+            id={5}
             title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
             price={98.99}
             image="http://mobileimages.lowes.com/product/converted/841667/841667166834.jpg?size=pdhi"
@@ -48,6 +53,7 @@ const Home = () => {
         </div>
         <div className="home__row">
           <Product
+            id={6}
             title="Alienware 34 Curved Gaming Monitor - AW3420DW"
             price={949.99}
             image="https://i.dell.com/sites/csimages/SNP_Imagery/all/3420dw.png"
